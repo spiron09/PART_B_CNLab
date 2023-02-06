@@ -7,6 +7,7 @@ public class TcpServer {
         System.out.println("Server is listening");
         Socket s = ss.accept();
         System.out.println("Connection Established");
+
         InputStream is = s.getInputStream();
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
         String filename = br.readLine();
